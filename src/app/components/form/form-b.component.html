@@ -1,0 +1,9 @@
+<form [formGroup]="myForm" (ngSubmit)="onDelete()">
+  <label for="fieldX">Field X:</label>
+  <input id="fieldX" formControlName="fieldX" type="text" />
+
+  <label for="fieldY">Field Y:</label>
+  <input id="fieldY" formControlName="fieldY" type="text" />
+
+  <button type="submit">Delete</button>
+</form>

@@ -1,0 +1,9 @@
+<form [formGroup]="myForm" (ngSubmit)="onSave()">
+  <label for="fieldA">Field A:</label>
+  <input id="fieldA" formControlName="fieldA" type="text" />
+
+  <label for="fieldB">Field B:</label>
+  <input id="fieldB" formControlName="fieldB" type="text" />
+
+  <button type="submit">Save</button>
+</form>

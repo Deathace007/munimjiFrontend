@@ -1,4 +1,71 @@
-input.ng-invalid.ng-touched {
-    border-color: red;
-  }
-  
+.main-container {
+  display: flex;
+}
+
+.navbar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.form-container {
+  flex-grow: 1;
+  padding: 1rem;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  background-color: #6ea8d9;
+  padding: 1rem;
+  color: white;
+}
+
+.header label {
+  margin-right: 0.5rem;
+}
+
+.data-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.data-table input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button-group button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}

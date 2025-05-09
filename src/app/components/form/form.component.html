@@ -1,20 +1,50 @@
-<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-    <div>
-      <label for="name">Name:</label>
-      <input id="name" formControlName="name" />
-      <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
-        Name is required.
+<div class="main-container">
+  <div class="navbar">This is a NavBar</div>
+  <div class="form-container">
+    <form [formGroup]="myForm">
+      <div class="header">
+        <label for="name">NAME</label>
+        <input id="name" formControlName="name" />
+        <label for="entity">ENTITY</label>
+        <input id="entity" formControlName="entity" />
       </div>
-    </div>
-  
-    <div>
-      <label for="email">Email:</label>
-      <input id="email" formControlName="email" />
-      <div *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">
-        Enter a valid email.
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Date</th>
+            <th>Debit</th>
+            <th>Credit</th>
+            <th>Total</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" disabled /></td>
+            <td><input type="date" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" disabled /></td>
+            <td><input type="date" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-group">
+        <button type="button" (click)="onView()">View</button>
+        <button type="button" (click)="onUpdate()">Update</button>
+        <button type="button" (click)="onSubmit()">Submit</button>
       </div>
-    </div>
-  
-    <button type="submit" [disabled]="myForm.invalid">Submit</button>
-  </form>
-  
+    </form>
+  </div>
+</div>

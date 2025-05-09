@@ -1,0 +1,9 @@
+<form [formGroup]="myForm" (ngSubmit)="onReset()">
+  <label for="fieldM">Field M:</label>
+  <input id="fieldM" formControlName="fieldM" type="text" />
+
+  <label for="fieldN">Field N:</label>
+  <input id="fieldN" formControlName="fieldN" type="text" />
+
+  <button type="button" (click)="onReset()">Reset</button>
+</form>
